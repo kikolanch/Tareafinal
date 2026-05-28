@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es un sitio web?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f0ea;
+            color: #3d342e;
+            margin: 0; padding: 0;
+            line-height: 1.7;
+        }
+
+        /* Menú de Navegación Superior */
+        nav {
+            background-color: #fffdfa;
+            border-bottom: 1px solid #ede5dc;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #7c5c43;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin: 0 15px;
+            letter-spacing: 0.05em;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: #4a3b32;
+            font-weight: 600;
+        }
+
+        header {
+            background-color: #fffdfa;
+            padding: 50px 20px;
+            border-bottom: 1px solid #ddcfc0;
+            text-align: center;
+        }
+        header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.5rem; color: #4a3b32; font-weight: 700; }
+        header p { margin: 10px 0 0 0; color: #8c7662; font-size: 1.1rem; font-style: italic; font-family: 'Playfair Display', serif; }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 45px;
+            background-color: #fffdfa;
+            border: 1px solid #e8dfd5;
+            box-shadow: 0 10px 30px rgba(74, 59, 50, 0.04);
+        }
+
+        h2 { font-family: 'Playfair Display', serif; color: #4a3b32; font-size: 1.8rem; margin-top: 40px; border-bottom: 1px solid #ddcfc0; padding-bottom: 10px; }
+        h3 { font-family: 'Playfair Display', serif; color: #7c5c43; font-size: 1.4rem; margin-top: 25px; margin-bottom: 10px; }
+        p { color: #51463e; font-size: 1.05rem; text-align: justify; }
+
+        .analog-box {
+            background-color: #f7f3ed;
+            border-left: 3px solid #c5a880;
+            padding: 20px 25px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .concept-box {
+            background-color: #fbf9f6;
+            border: 1px solid #f0e9e1;
+            border-left: 3px solid #7c5c43;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        .concept-box h4 { font-family: 'Playfair Display', serif; margin-top: 0; margin-bottom: 10px; color: #4a3b32; font-size: 1.2rem; }
+        .concept-box p { margin-bottom: 0; font-size: 0.98rem; color: #615247; }
+
+        ul { padding-left: 20px; margin: 15px 0; }
+        li { margin-bottom: 10px; color: #51463e; font-size: 1rem; }
+
+        footer { text-align: center; padding: 40px; color: #8c7662; font-size: 0.85rem; border-top: 1px solid #ddcfc0; background-color: #fffdfa; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="conceptos-web.html" class="active">¿Qué es un sitio web?</a>
+        <a href="html-css.html">¿Cómo se hace una web?</a>
+        <a href="publicacion-ia.html">Subir la web, leyes e IA</a>
+        <a href="legal.html">Políticas Legales</a>
+    </nav>
+
+    <header>
+        <h1>Infraestructura Global e Internet</h1>
+        <p>El espacio web y la red de comunicación mundial</p>
+    </header>
+
+    <div class="container">
+        <h2>📖 ¿Qué es un Sitio Web? (Entendiendo los conceptos)</h2>
+        <p>A menudo usamos los términos en internet de forma indistinta, pero en el desarrollo profesional es crucial conocer la diferencia a través de una analogía muy simple:</p>
+
+        <div class="analog-box">
+            <strong>La analogía del libro:</strong> Piensa en internet como una gran biblioteca. Una "página web" es una hoja suelta de un libro, mientras que el "sitio web" es el libro completo encuadernado.
+        </div>
+
+        <h3>💡 Qué es una página web</h3>
+        <p>Es un archivo electrónico único escrito en código (principalmente HTML) que contiene texto, imágenes, vídeos y enlaces. Es lo que ves en tu pantalla en un momento concreto bajo una dirección específica.</p>
+
+        <h3>🗂️ Tipos de páginas web</h3>
+        <p>Dependiendo de su función y tecnología, se dividen principalmente en dos clases:</p>
+        <ul>
+            <li><strong>Páginas Estáticas:</strong> Muestran el mismo contenido a todos los usuarios. No cambian a menos que un programador edite su código directamente (por ejemplo, el menú digital fijo de un restaurante).</li>
+            <li><strong>Páginas Dinámicas:</strong> Su contenido cambia en tiempo real según las interacciones del usuario o datos almacenados (por ejemplo, tu feed de Instagram, Amazon o el panel del tiempo).</li>
+        </ul>
+
+        <h3>🖥️ Qué es un sitio web</h3>
+        <p>Es un espacio centralizado en internet que agrupa un conjunto de páginas web conectadas entre sí y que comparten un tema común. Se accede a él a través de una dirección principal conocida como dominio (por ejemplo, <code>www.wikipedia.org</code>).</p>
+
+        <h2>🌍 Cómo funciona Internet</h2>
+        <p>Internet no es magia en el aire; es una infraestructura física colosal de cables y ordenadores conectados en todo el planeta compartiendo información mediante un proceso lógico:</p>
+
+        <div class="concept-box">
+            <h4>🔎 Qué hacen los navegadores y servidores</h4>
+            <p>Es una relación de petición y respuesta conocida como el modelo <strong>Cliente-Servidor</strong>. El <strong>Navegador</strong> (como Chrome o Safari) actúa como el cliente: es el mensajero que pide ver una web. El <strong>Servidor</strong> es un ordenador superpotente encendido 24/7 en algún lugar del mundo que guarda los archivos de la web y los envía de vuelta cuando el navegador se los solicita.</p>
+        </div>
+
+        <div class="concept-box">
+            <h4>📡 Cómo viaja la información por la red</h4>
+            <p>Cuando escribes una dirección web, tu navegador pide la "matrícula" de ese servidor a un traductor universal llamado <strong>DNS</strong> (que transforma nombres como google.com en números IP). Una vez localizada, la información de la página web se divide en millones de pequeños <strong>paquetes de datos</strong>. Estos paquetes viajan por cables submarinos y satélites a la velocidad de la luz, toman caminos diferentes para no saturar la red, y se vuelven a unir perfectamente en tu navegador para mostrarte la pantalla final de forma segura mediante el protocolo <strong>HTTPS</strong>.</p>
+        </div>
+    </div>
+
+    <footer><p>Unidad Didáctica de Desarrollo Web • Proyecto Modular</p></footer>
+
+</body>
+</html>

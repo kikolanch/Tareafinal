@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo se hace una web?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f0ea;
+            color: #3d342e;
+            margin: 0; padding: 0;
+            line-height: 1.7;
+        }
+
+        /* Menú de Navegación Superior */
+        nav {
+            background-color: #fffdfa;
+            border-bottom: 1px solid #ede5dc;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #7c5c43;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin: 0 15px;
+            letter-spacing: 0.05em;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: #4a3b32;
+            font-weight: 600;
+        }
+
+        header {
+            background-color: #fffdfa;
+            padding: 50px 20px;
+            border-bottom: 1px solid #ddcfc0;
+            text-align: center;
+        }
+        header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.5rem; color: #4a3b32; font-weight: 700; }
+        header p { margin: 10px 0 0 0; color: #8c7662; font-size: 1.1rem; font-style: italic; font-family: 'Playfair Display', serif; }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 45px;
+            background-color: #fffdfa;
+            border: 1px solid #e8dfd5;
+            box-shadow: 0 10px 30px rgba(74, 59, 50, 0.04);
+        }
+
+        h2 { font-family: 'Playfair Display', serif; color: #4a3b32; font-size: 1.8rem; margin-top: 40px; border-bottom: 1px solid #ddcfc0; padding-bottom: 10px; }
+        p { color: #51463e; font-size: 1.05rem; text-align: justify; }
+
+        .analog-box {
+            background-color: #f7f3ed;
+            border-left: 3px solid #c5a880;
+            padding: 20px 25px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .classic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95rem;
+        }
+        .classic-table th {
+            background-color: #7c5c43;
+            color: #fffdfa;
+            font-family: 'Playfair Display', serif;
+            text-align: left;
+            padding: 15px;
+            font-weight: 500;
+        }
+        .classic-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ede5dc;
+            color: #51463e;
+        }
+        .classic-table tr:nth-child(even) { background-color: #fbf9f6; }
+
+        .code-inline {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f0ea;
+            padding: 2px 6px;
+            color: #7c5c43;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2b2521;
+            color: #f7f3ed;
+            padding: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            margin: 20px 0;
+            border-left: 4px solid #c5a880;
+            overflow-x: auto;
+        }
+
+        footer { text-align: center; padding: 40px; color: #8c7662; font-size: 0.85rem; border-top: 1px solid #ddcfc0; background-color: #fffdfa; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="conceptos-web.html">¿Qué es un sitio web?</a>
+        <a href="html-css.html" class="active">¿Cómo se hace una web?</a>
+        <a href="publicacion-ia.html">Subir la web, leyes e IA</a>
+        <a href="legal.html">Políticas Legales</a>
+    </nav>
+
+    <header>
+        <h1>Estructura Semántica & Modelado Estético</h1>
+        <p>El lenguaje de las etiquetas y el arte del estilo</p>
+    </header>
+
+    <div class="container">
+        <h2>🧩 Conceptos Básicos de HTML y CSS</h2>
+        <p>Para construir cualquier rincón del mundo digital moderno, necesitamos combinar dos tecnologías obligatorias que trabajan en perfecta sincronía:</p>
+
+        <div class="analog-box">
+            <strong>La analogía del cuerpo:</strong> HTML es el esqueleto (los huesos que dan soporte a la página), mientras que CSS es la ropa, el peinado y el maquillaje (lo que hace que el cuerpo luzca hermoso y presentable).
+        </div>
+
+        <h3>🧱 Entendiendo el Lenguaje HTML</h3>
+        <p>HTML funciona mediante <strong>etiquetas</strong>. Las etiquetas son palabras clave rodeadas por los símbolos <code>&lt;</code> y <code>&gt;</code> que le dicen al navegador qué tipo de contenido está leyendo. Aquí tienes el catálogo esencial que hemos aprendido:</p>
+
+        <table class="classic-table">
+            <thead>
+                <tr>
+                    <th>Etiqueta HTML</th>
+                    <th>¿Qué es de forma sencilla?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><span class="code-inline">&lt;html&gt;</span></td><td>El inicio y fin. Le dice al ordenador: "A partir de aquí comienza una página web".</td></tr>
+                <tr><td><span class="code-inline">&lt;head&gt;</span></td><td>La mente invisible. Guarda los datos técnicos, el título de la pestaña y los estilos. El usuario no lo ve directamente en la pantalla.</td></tr>
+                <tr><td><span class="code-inline">&lt;body&gt;</span></td><td>El cuerpo visible. Es el contenedor que guarda todo lo que sí vas a ver: textos, imágenes, botones y menús.</td></tr>
+                <tr><td><span class="code-inline">&lt;h1&gt; a &lt;h6&gt;</span></td><td>Los títulos. <span class="code-inline">&lt;h1&gt;</span> es el título más grande e importante, y <span class="code-inline">&lt;h6&gt;</span> es el subtítulo más pequeño.</td></tr>
+                <tr><td><span class="code-inline">&lt;p&gt;</span></td><td>El párrafo. Sirve para escribir bloques de texto normales y corrientes de manera ordenada.</td></tr>
+                <tr><td><span class="code-inline">&lt;img&gt;</span></td><td>La imagen. Sirve para mostrar fotos, ilustraciones o gráficos en la pantalla indicando su procedencia.</td></tr>
+                <tr><td><span class="code-inline">&lt;a&gt;</span></td><td>El enlace. Es el botón o texto interactivo que, al pulsarlo, te lleva volando a otra página web o sección.</td></tr>
+                <tr><td><span class="code-inline">&lt;ul&gt; y &lt;li&gt;</span></td><td>Las listas. <span class="code-inline">&lt;ul&gt;</span> crea una lista con puntos en blanco y <span class="code-inline">&lt;li&gt;</span> define cada uno de los elementos de esa lista.</td></tr>
+            </tbody>
+        </table>
+
+        <h2>🎨 Qué es CSS (Cascading Style Sheets)</h2>
+        <p>CSS significa <em>Hojas de Estilo en Cascada</em>. Es el lenguaje encargado exclusivo de la parte <strong>estética y visual</strong> de la web. Sin CSS, todas las páginas de internet se verían iguales: textos negros aburridos sobre un fondo blanco plano.</p>
+
+        <p>Gracias al CSS podemos cambiar los colores de fondo, las tipografías, añadir bordes elegantes y controlar con precisión los espacios mediante dos herramientas fundamentales:</p>
+        <ul>
+            <li><strong>Padding (Relleno):</strong> El espacio que hay *dentro* de una caja (la distancia entre el texto y su propio borde).</li>
+            <li><strong>Margin (Margen):</strong> El espacio que hay *fuera* de una caja (la distancia de separación con los demás elementos vecinos).</li>
+        </ul>
+
+        <h3>Un vistazo a cómo se escribe CSS:</h3>
+        <div class="code-block">
+            /* Le decimos a todos los títulos h1 que sean marrones y elegantes */<br>
+            h1 {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: #7c5c43; /* Color café */<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Playfair Display'; /* Letra clásica */<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 20px; /* Espacio hacia abajo */<br>
+            }
+        </div>
+    </div>
+
+    <footer><p>Unidad Didáctica de Desarrollo Web • Proyecto Modular</p></footer>
+
+</body>
+</html>

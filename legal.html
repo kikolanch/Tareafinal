@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas Legales e Infografías</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f0ea;
+            color: #3d342e;
+            margin: 0; padding: 0;
+            line-height: 1.7;
+        }
+
+        /* Menú de Navegación Superior Común */
+        nav {
+            background-color: #fffdfa;
+            border-bottom: 1px solid #ede5dc;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #7c5c43;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin: 0 15px;
+            letter-spacing: 0.05em;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: #4a3b32;
+            font-weight: 600;
+        }
+
+        header {
+            background-color: #fffdfa;
+            padding: 50px 20px;
+            border-bottom: 1px solid #ddcfc0;
+            text-align: center;
+        }
+        header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.5rem; color: #4a3b32; font-weight: 700; }
+        header p { margin: 10px 0 0 0; color: #8c7662; font-size: 1.1rem; font-style: italic; font-family: 'Playfair Display', serif; }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 45px;
+            background-color: #fffdfa;
+            border: 1px solid #e8dfd5;
+            box-shadow: 0 10px 30px rgba(74, 59, 50, 0.04);
+        }
+
+        h2 { font-family: 'Playfair Display', serif; color: #4a3b32; font-size: 1.8rem; margin-top: 40px; border-bottom: 1px solid #ddcfc0; padding-bottom: 10px; }
+        h3 { font-family: 'Playfair Display', serif; color: #7c5c43; font-size: 1.3rem; margin-top: 20px; margin-bottom: 8px; }
+        p { color: #51463e; font-size: 1.05rem; text-align: justify; margin-bottom: 20px; }
+
+        /* Contenedor y estilos para que tus imágenes queden perfectas */
+        .img-container {
+            margin: 25px 0 45px 0;
+            width: 100%;
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #e8dfd5;
+            box-shadow: 0 4px 15px rgba(74, 59, 50, 0.03);
+        }
+
+        footer { text-align: center; padding: 40px; color: #8c7662; font-size: 0.85rem; border-top: 1px solid #ddcfc0; background-color: #fffdfa; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="conceptos-web.html">¿Qué es un sitio web?</a>
+        <a href="html-css.html">¿Cómo se hace una web?</a>
+        <a href="publicacion-ia.html">Subir la web, leyes e IA</a>
+        <a href="legal.html" class="active">Políticas Legales</a>
+    </nav>
+
+    <header>
+        <h1>Transparencia y Normativa Legal</h1>
+        <p>Las reglas obligatorias que protegen a los usuarios en internet</p>
+    </header>
+
+    <div class="container">
+
+        <h2>⚖️ 1. Aviso Legal</h2>
+        <h3>¿Qué es?</h3>
+        <p>Es el documento obligatorio que identifica al dueño de la página web. Sirve para que cualquier visitante sepa quién está detrás del sitio y cómo ponerse en contacto directo en caso de alguna duda o problema legal.</p>
+
+        <div class="img-container">
+            <img src="imagenes/infografiaavisolegal.png" alt="Infografía explicativa sobre el Aviso Legal">
+        </div>
+
+
+        <h2>🔒 2. Política de Privacidad</h2>
+        <h3>¿Qué es?</h3>
+        <p>Es el apartado donde se explica de forma clara qué datos personales se guardan de los usuarios (como el nombre o el correo en un formulario), por qué se recogen, dónde se almacenan y qué derechos tiene la persona para pedir que se borren por completo.</p>
+
+        <div class="img-container">
+            <img src="imagenes/infografiapoliticadeprivacidad.png" alt="Infografía explicativa sobre la Política de Privacidad">
+        </div>
+
+
+        <h2>🍪 3. Política de Cookies</h2>
+        <h3>¿Qué son?</h3>
+        <p>Las cookies son pequeños archivos de texto que las páginas web guardan en tu navegador para recordar detalles de tu visita (como tu idioma preferido o los productos de tu carrito). Esta política explica cuáles se usan y pide tu permiso antes de activarlas.</p>
+
+        <div class="img-container">
+            <img src="imagenes/infografiacookies.png" alt="Infografía explicativa sobre el funcionamiento de las Cookies">
+        </div>
+
+    </div>
+
+    <footer><p>Unidad Didáctica de Desarrollo Web • Proyecto Modular</p></footer>
+
+</body>
+</html>
