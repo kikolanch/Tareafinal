@@ -83,6 +83,37 @@
 
         ul { padding-left: 20px; margin: 15px 0; }
         li { margin-bottom: 10px; color: #51463e; font-size: 1rem; }
+        
+        code {
+            background-color: #f4f0ea;
+            padding: 2px 6px;
+            font-size: 0.95rem;
+            color: #7c5c43;
+            font-family: monospace;
+        }
+
+        /* Contenedor Responsivo para la Infografía */
+        .infographic-container {
+            margin: 35px 0 15px 0;
+            text-align: center;
+            background-color: #fbf9f6;
+            border: 1px solid #e8dfd5;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(74, 59, 50, 0.02);
+        }
+        .infographic-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ede5dc;
+        }
+        .infographic-caption {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #8c7662;
+            font-style: italic;
+        }
 
         footer { text-align: center; padding: 40px; color: #8c7662; font-size: 0.85rem; border-top: 1px solid #ddcfc0; background-color: #fffdfa; margin-top: 60px; }
     </style>
@@ -104,38 +135,52 @@
 
     <div class="container">
         <h2>📖 ¿Qué es un Sitio Web? (Entendiendo los conceptos)</h2>
-        <p>A menudo usamos los términos en internet de forma indistinta, pero en el desarrollo profesional es crucial conocer la diferencia a través de una analogía muy simple:</p>
+        <p>A menudo usamos los términos informáticos de forma indistinta en el día a día, pero en el desarrollo profesional es crucial conocer la diferencia técnica exacta a través de una analogía muy simple:</p>
 
         <div class="analog-box">
-            <strong>La analogía del libro:</strong> Piensa en internet como una gran biblioteca. Una "página web" es una hoja suelta de un libro, mientras que el "sitio web" es el libro completo encuadernado.
+            <strong>La analogía del libro:</strong> Piensa en internet como una inmensa biblioteca global. Una <strong>"página web"</strong> es una hoja suelta de un libro que contiene información concreta, mientras que el <strong>"sitio web"</strong> es el libro completo encuadernado y estructurado con todas sus páginas conectadas.
         </div>
 
         <h3>💡 Qué es una página web</h3>
-        <p>Es un archivo electrónico único escrito en código (principalmente HTML) que contiene texto, imágenes, vídeos y enlaces. Es lo que ves en tu pantalla en un momento concreto bajo una dirección específica.</p>
+        <p>Es un documento o archivo electrónico único escrito en código de programación (principalmente HTML) capaz de contener texto, imágenes, vídeos, formularios y enlaces hipertextuales. Es la interfaz que visualizas en tu pantalla en un momento concreto bajo una dirección URL específica.</p>
 
         <h3>🗂️ Tipos de páginas web</h3>
-        <p>Dependiendo de su función y tecnología, se dividen principalmente en dos clases:</p>
+        <p>Dependiendo de su comportamiento, funciones operativas y la tecnología con la que se procesan, las páginas se dividen principalmente en dos clases:</p>
         <ul>
-            <li><strong>Páginas Estáticas:</strong> Muestran el mismo contenido a todos los usuarios. No cambian a menos que un programador edite su código directamente (por ejemplo, el menú digital fijo de un restaurante).</li>
-            <li><strong>Páginas Dinámicas:</strong> Su contenido cambia en tiempo real según las interacciones del usuario o datos almacenados (por ejemplo, tu feed de Instagram, Amazon o el panel del tiempo).</li>
+            <li><strong>Páginas Estáticas:</strong> Muestran exactamente el mismo contenido predeterminado a todos los usuarios. No cambian ni interactúan con bases de datos a menos que un programador edite su código fuente directamente (por ejemplo, la landing page de presentación de una empresa o el menú digital fijo de un restaurante).</li>
+            <li><strong>Páginas Dinámicas:</strong> Su contenido se genera en tiempo real adaptándose según las interacciones del usuario, sus preferencias o los datos guardados en un servidor (por ejemplo, el feed de publicaciones de Instagram, los carritos de compra de Amazon o los paneles meteorológicos automatizados).</li>
         </ul>
 
         <h3>🖥️ Qué es un sitio web</h3>
-        <p>Es un espacio centralizado en internet que agrupa un conjunto de páginas web conectadas entre sí y que comparten un tema común. Se accede a él a través de una dirección principal conocida como dominio (por ejemplo, <code>www.wikipedia.org</code>).</p>
+        <p>Es un espacio virtual centralizado en internet que agrupa un conjunto organizado de páginas web asociadas entre sí mediante enlaces de navegación y que comparten una misma temática o fin comercial. Para acceder a él, los usuarios utilizan una dirección principal única y fácil de recordar conocida como dominio (por ejemplo, <code>www.wikipedia.org</code>).</p>
 
         <h2>🌍 Cómo funciona Internet</h2>
-        <p>Internet no es magia en el aire; es una infraestructura física colosal de cables y ordenadores conectados en todo el planeta compartiendo información mediante un proceso lógico:</p>
+        <p>Internet no es un ente mágico flotando en el aire; se trata de una red e infraestructura física colosal compuesta por ordenadores interconectados, centros de datos masivos y miles de kilómetros de cables de fibra óptica que envuelven todo el planeta compartiendo información de forma lógica:</p>
 
         <div class="concept-box">
-            <h4>🔎 Qué hacen los navegadores y servidores</h4>
-            <p>Es una relación de petición y respuesta conocida como el modelo <strong>Cliente-Servidor</strong>. El <strong>Navegador</strong> (como Chrome o Safari) actúa como el cliente: es el mensajero que pide ver una web. El <strong>Servidor</strong> es un ordenador superpotente encendido 24/7 en algún lugar del mundo que guarda los archivos de la web y los envía de vuelta cuando el navegador se los solicita.</p>
+            <h4>🔎 El Modelo Cliente-Servidor</h4>
+            <p>Toda la navegación web se basa en una arquitectura de petición y respuesta. El <strong>Navegador</strong> (como Google Chrome, Safari o Firefox) actúa como el cliente: es la aplicación que solicita ver una web. El <strong>Servidor</strong> es un ordenador de altas prestaciones encendido de forma ininterrumpida las 24 horas del día en algún lugar del mundo, encargado de almacenar de forma segura todos los archivos de la página web y enviárselos al cliente cuando este los solicita.</p>
         </div>
 
         <div class="concept-box">
-            <h4>📡 Cómo viaja la información por la red</h4>
-            <p>Cuando escribes una dirección web, tu navegador pide la "matrícula" de ese servidor a un traductor universal llamado <strong>DNS</strong> (que transforma nombres como google.com en números IP). Una vez localizada, la información de la página web se divide en millones de pequeños <strong>paquetes de datos</strong>. Estos paquetes viajan por cables submarinos y satélites a la velocidad de la luz, toman caminos diferentes para no saturar la red, y se vuelven a unir perfectamente en tu navegador para mostrarte la pantalla final de forma segura mediante el protocolo <strong>HTTPS</strong>.</p>
+            <h4>📡 El viaje técnico de los datos por la red</h4>
+            <p>Al escribir un dominio, tu navegador no sabe a dónde ir, por lo que pide la dirección numérica del servidor a un traductor universal llamado <strong>DNS</strong> (que transforma nombres como google.com en códigos numéricos llamados direcciones IP). Una vez localizada la máquina, el archivo de la página web se fragmenta en millones de pequeños <strong>paquetes de datos</strong>.</p>
+            <p>Estos paquetes viajan por cables submarinos a la velocidad de la luz, toman rutas distintas para evitar colapsar la red y se vuelven a ensamblar perfectamente en el dispositivo del usuario para componer la interfaz final. Todo este trayecto se efectúa bajo el protocolo de seguridad cifrado <strong>HTTPS</strong>, asegurando que nadie intercepte la comunicación.</p>
+        </div>
+
+        <h2>📊 Infografía Didáctica</h2>
+        <p>En el siguiente esquema gráfico puedes estudiar paso a paso el viaje secuencial que realizan tus datos desde que haces un clic en tu dispositivo hasta que el servidor remoto te devuelve el diseño procesado en tu pantalla:</p>
+        
+        <div class="infographic-container">
+            <img src="imagenes/Infografía Cronología Horizontal Corporativo Flechas Colorido (1).pdf" alt="Infografía del viaje de la información por Internet a través del modelo cliente servidor">
+            <div class="infographic-caption">Figura 1.1: Diagrama de flujo de paquetes de datos, resolución DNS y arquitectura Cliente-Servidor en la red global.</div>
         </div>
     </div>
+
+    <footer><p>Unidad Didáctica de Desarrollo Web • Proyecto Modular</p></footer>
+
+</body>
+</html>
 
     <footer><p>Unidad Didáctica de Desarrollo Web • Proyecto Modular</p></footer>
 
