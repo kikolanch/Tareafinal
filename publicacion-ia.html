@@ -15,7 +15,7 @@
             margin: 0; padding: 0;
             line-height: 1.7;
         }
-
+        
         /* Menú de Navegación Superior */
         nav {
             background-color: #fffdfa;
@@ -49,7 +49,7 @@
         }
         header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.5rem; color: #4a3b32; font-weight: 700; }
         header p { margin: 10px 0 0 0; color: #8c7662; font-size: 1.1rem; font-style: italic; font-family: 'Playfair Display', serif; }
-
+        
         .container {
             max-width: 850px;
             margin: 40px auto;
@@ -58,10 +58,10 @@
             border: 1px solid #e8dfd5;
             box-shadow: 0 10px 30px rgba(74, 59, 50, 0.04);
         }
-
+        
         h2 { font-family: 'Playfair Display', serif; color: #4a3b32; font-size: 1.8rem; margin-top: 40px; border-bottom: 1px solid #ddcfc0; padding-bottom: 10px; }
         p { color: #51463e; font-size: 1.05rem; text-align: justify; }
-
+        
         .law-block {
             border: 1px solid #ede5dc;
             background-color: #fbf9f6;
@@ -80,7 +80,7 @@
             margin-bottom: 40px;
         }
         .tutorial-box h3 { font-family: 'Playfair Display', serif; color: #7c5c43; font-size: 1.4rem; margin-top: 0; margin-bottom: 25px; text-align: center;}
-
+        
         .step-list { list-style: none; padding-left: 0; margin: 0; }
         .step-item { position: relative; padding-left: 50px; margin-bottom: 25px; }
         .step-item::before {
@@ -99,25 +99,55 @@
         .step-item strong { display: block; font-size: 1.05rem; color: #4a3b32; margin-bottom: 4px; }
         .step-item span { color: #615247; font-size: 0.98rem; display: block; text-align: justify; }
 
-        /* Contenedor adaptado para vídeos */
-        .video-container {
-            margin: 25px 0 10px 0;
-            width: 100%;
-            background-color: #000;
-            border: 1px solid #e8dfd5;
-            box-shadow: 0 4px 15px rgba(74, 59, 50, 0.03);
-            position: relative;
-            padding-bottom: 56.25%; /* Formato 16:9 Panorámico */
-            height: 0;
-            overflow: hidden;
-        }
-        .video-container iframe, .video-container video {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: 0;
+        /* Contenedor centralizado para el botón de vídeo */
+        .video-action-box {
+            margin: 40px 0 20px 0;
+            padding: 40px;
+            background-color: #fbf9f6;
+            border: 1px dashed #c5a880;
+            border-radius: 4px;
+            text-align: center;
         }
 
+        /* Botón de YouTube Estilizado */
+        .btn-youtube {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #7c5c43;
+            color: #fffdfa;
+            text-decoration: none;
+            padding: 18px 35px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(124, 92, 67, 0.2);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        /* Icono play del botón */
+        .btn-youtube::before {
+            content: '▶';
+            margin-right: 12px;
+            font-size: 0.8rem;
+            color: #c5a880;
+            transition: color 0.3s ease;
+        }
+
+        /* Efecto Visual al pasar el ratón por encima (Hover) */
+        .btn-youtube:hover {
+            background-color: #4a3b32;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(74, 59, 50, 0.3);
+            border-color: #c5a880;
+        }
+
+        .btn-youtube:hover::before {
+            color: #fffdfa;
+        }
+        
         footer { text-align: center; padding: 40px; color: #8c7662; font-size: 0.85rem; border-top: 1px solid #ddcfc0; background-color: #fffdfa; margin-top: 60px; }
     </style>
 </head>
@@ -168,7 +198,7 @@
 
         <div class="tutorial-box">
             <h3>🛠️ Guía Operativa: Conectividad GitHub + ChatGPT Codex</h3>
-
+            
             <ul class="step-list">
                 <li class="step-item" data-index="I">
                     <strong>Inicio de Entorno Remoto</strong>
@@ -202,12 +232,18 @@
         </div>
 
         <h2>🎥 Recursos Audiovisuales</h2>
-        <p>A continuación, puedes visualizar el videotutorial explicativo sobre cómo sincronizar tus solicitudes de cambios con GitHub y aplicar herramientas de Inteligencia Artificial en el flujo de trabajo:</p>
 
-        <div class="video-container">
-            <iframe src="https://youtu.be/wiQQQNz99gM" allowfullscreen></iframe>
+        <p>
+            A continuación, puedes acceder al videotutorial explicativo sobre cómo
+            sincronizar tus solicitudes de cambios con GitHub y aplicar herramientas
+            de Inteligencia Artificial en el flujo de trabajo:
+        </p>
 
-            </div>
+        <div class="video-action-box">
+            <a href="https://www.youtube.com/watch?v=wiQQQNz99gM" class="btn-youtube" target="_blank">
+                Ver Videotutorial en YouTube
+            </a>
+        </div>
     </div>
 
     <footer><p>Unidad Didáctica de Desarrollo Web • Proyecto Modular</p></footer>
